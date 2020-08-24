@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head> 
+        <meta charset="utf-8"/>
+        <title>Aula 5</title>
+    </head>
+    
+    <body>
+        <h1>Pesquisa de Satisfação</h1>
+        <p>Queremos entender melhor o porquê de ter cancelado o seu plano de internet, por favor preencha o formulário abaixo.</p>
+       
+        <form action="http://www.example.com/upload.php" method="post">
+            <fieldset>
+            <legend>Suas Informações</legend>
+            <label>Nome:<input type="text" name="name"/></label>
+            <br/>
+            <br/>
+
+            
+            <label>Email:<input type="email" name="email"/></label>
+            <br/>
+            <br/>
+
+            <label>Idade:</label>
+            <select name="age">
+                <option value="-21"> abaixo de 21</option>
+                <option value="21/30"> entre 21 e 30</option>
+                <option value="31/45"> entre 31 e 45</option>
+                <option value="46/60"> entre 46 e 60</option>
+                <option value="60+"> acimda de 60</option>
+            </select>
+            <br/>
+            <br/>
+
+            <label>Gênero:</label>
+            <input name="gender" type="radio" value="f"/> <label for="female">Feminino</label>
+            <input name="gender" type="radio" value="m"/> <label for="male">Masculino</label>
+            <br/>
+            <br/>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>Informações Referentes ao Cancelamento</legend>
+                <p>Razão do cancelamento:</p>
+                <input  name="razaoCancelamento" type="checkbox" value="price"/> <label >Preço</label>
+                <input  name="razaoCancelamento" type="checkbox" value="quality"/> <label >Qualidade do Serviço</label>
+                <input  name="razaoCancelamento" type="checkbox" value="service"/> <label >Atendimento</label>
+                <br/>
+                <br/>
+
+                <p>Tem algum comentário adicional?</p>
+                <textarea name="comments" cols="40" rows="10" placeholder="Digite o sue comentário aqui."></textarea>
+
+                <p>Anexe uma cópia digitalizada da sua última conta:</p>
+                <input type="file" name="bill"/> <br/>
+                
+                </fieldset>
+                <br/>
+                <input type="submit" value="Submeter"/>
+        </form>
+    </body>
+</html>
