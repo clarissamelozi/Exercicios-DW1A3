@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head> 
+        <meta charset="utf-8"/>
+        <title>Formulário</title>
+        <link rel="stylesheet" href="exercicios3-formulario.css">
+    </head>
+    
+    <body>
+        
+        <form action="http://www.example.com/upload.php" method="post">
+            <fieldset>
+            <legend>Suas Informações</legend>
+            <label>Nome:<input type="text" name="name"/></label>
+            <br/>
+            <br/>
+
+            <label>Email:<input type="email" name="email"/></label>
+            <br/>
+            <br/>
+           
+            <label>Telefone:<input type="text" name="phone"/></label>
+            <br/>
+            <br/>
+
+            <textarea name="mensagem" cols="40" rows="10" placeholder="Digite a sua mensagem aqui."></textarea>
+            <br/>
+            <br/>
+
+            </fieldset>
+            <br/>
+
+            <input type="submit" value="Submeter"/>
+        </form>
+    </body>
+</html>
