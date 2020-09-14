@@ -1,0 +1,45 @@
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color:rgba(27, 27, 136, 0.753);
+    
+}
+.column1,.column2,.column3 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    
+  }
+
+.row1:after,.row2:after,.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+
+.page{
+    margin-left: 340px;
+}
+
+#resultadoCampeonato {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width:70%;
+
+  }
+  
+  #resultadoCampeonato td, #resultadoCampeonato th {
+    border: 1px solid #ddd;
+  }
+  
+  #resultadoCampeonato tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #resultadoCampeonato tr:hover {background-color: #ddd;}
+  
+  #resultadoCampeonato th {
+    text-align: left;
+    background-color: #2a48ce;
+    color: white;
+  }
