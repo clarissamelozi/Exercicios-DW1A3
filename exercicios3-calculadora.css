@@ -1,0 +1,61 @@
+
+.screen{grid-area: screen;}
+.AC { grid-area: AC; }
+.percent{ grid-area: percent; }
+.X { grid-area: X; }
+.division { grid-area: division; }
+.eight{grid-area: eight;}
+.seven{grid-area: seven;}
+.nine{grid-area:nine;}
+.equal{grid-area:equal;}
+.four{grid-area:four;}
+.five{grid-area:five;}
+.minus{grid-area:minus;}
+.one{grid-area:one;}
+.two{grid-area:two;}
+.three{grid-area:three;}
+.plus{grid-area:plus;}
+.zero{grid-area:zero;}
+.dot{grid-area:dot;}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'screen screen screen screen '
+        'AC percent X division'
+        'seven eight nine equal'
+        'four five six minus'
+        'one two three plus'
+        'zero zero dot plus'
+      ;
+
+    grid-gap: 10px;
+    background-color: #8c8c8d;
+    padding: 40px;
+    width: 30%;
+    margin-left:35%;
+    border-radius: 10px;
+  }
+
+
+.screen{
+    text-align:right;
+}
+
+.grid-container > div:not(:first-of-type) {
+  
+  text-align: center;
+ 
+} 
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    font-size: 30px;
+    border-color:black;
+    border-radius: 10px;
+  } 
+
